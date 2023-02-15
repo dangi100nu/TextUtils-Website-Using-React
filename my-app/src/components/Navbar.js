@@ -19,13 +19,6 @@ export default function Navbar(props) {
                         <li className="nav-item">
                             <Link className="nav-link " to="/about">About </Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="/">Contact Us</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">{props.aboutText}</a>
-                        </li>
-
 
                     </ul>
                     <div className={`form-check form-switch text-${props.mode === "warning" ? "dark" : "light"}`}>
