@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        let a = 24;
+        console.log(a)
+
+
+        // using of arrow function
+        let obj = {
+            a: this,
+            myfunc: (number) => {
+                console.log("the number is" + this);
+            }
+        }
+        obj.myfunc()
+        console.log(obj.a)
+
+        // using of normal function
+        let obj1 = {
+            a: this,
+            myfunc: function (number) {
+                console.log("the number is" + this);
+            }
+        }
+        obj1.myfunc()
+        console.log(obj1.a)
+
+
+
+    </script>
+</body>
+
+</html>
